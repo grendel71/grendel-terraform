@@ -1,0 +1,10 @@
+[k3s_master]
+k3s-master ansible_host=192.168.1.77
+
+[k3s_workers]
+k3s-worker-1 ansible_host=192.168.1.78
+#k3s-worker-2 ansible_host=192.168.30.102
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=../ssh/k8s2
